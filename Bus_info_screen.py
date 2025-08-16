@@ -1,9 +1,9 @@
 import tkinter as tk
 
 HEADER_TEXTS = [
-    ("Bus direction", "Delay"),
-    ("Bus1", "0 min"),
-    ("Bus2", "0 min"),
+    ("Smer", "Mešká"),
+    ("Pezinok", "0 min"),
+    ("Bratislava", "0 min"),
 ]
 
 LINE_COLOR = "white"
@@ -47,8 +47,8 @@ def draw_grid(canvas):
             if r == 0:
                 font = FONT_HEADER
             else:
-                # Dynamic font size (~40% of row height)
-                size = int(row_height * 0.40)
+                # Dynamic font size (~20% of row height)
+                size = int(row_height * 0.20)
                 font = ("Segoe UI", size, "bold")
             canvas.create_text(
                 cx, cy,
